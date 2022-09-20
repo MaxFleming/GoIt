@@ -1,0 +1,10 @@
+:root {
+    --bg-main-color:#ccc;
+    --bg-button: blue;
+    --text-button: yellow;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
