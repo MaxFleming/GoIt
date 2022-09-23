@@ -1,94 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio</title>
-    <link rel="stylesheet" href="style/main.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Studio</title>
+	<link rel="stylesheet" href="style/main.css">
 </head>
+
 <body>
-    <header>
-        <img src="./images/logo.svg" alt="Web Studio logo" width="145" height="31">
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-        
-        <ul class="contacts">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+38(096)111-11-11">+38(096)111-11-11</a></li>
-        </ul>
-    </header>
-    <main>
-        <div class="hero">
-            <h1>Effective solutions for your business</h1>
-            <button><a href="#">Order a service</a></button>
-        </div>
+	<header>
+		<a href="./" class="logo"><span class="logo-blue">web</span>studio</a>
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Studio</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</nav>
 
-        <ul class="features">
-            <li class="feature1">
-                <h3>attention to details</h3>
-                <p>Ideological considerations, and even the beginning of daily work on forming a position.</p>
-            </li>
-            <li class="feature2">
-                <h3>punctuality</h3>
-                <p>The task of the organization, especially the framework and the place of personnel training, attracts.</p>
-            </li>
-            <li class="feature3">
-                <h3>planning</h3>
-                <p>Likewise, consultation with a broad asset largely determines.
-                </p>
-            </li>
-            <li class="feature4">
-                <h3>modern technology</h3>
-                <p>The importance of these problems is so obvious that the implementation of planned tasks.</p>
-            </li>
-        </ul>
+		<ul class="contacts">
+			<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+			<li><a href="tel:+38(096)111-11-11">+38(096)111-11-11</a></li>
+		</ul>
+	</header>
+	<main>
+		<section class="hero">
+			<h1 class="hero-title">Effective solutions for your business</h1>
+			<button type="button"><a href="#">Order a service</a></button>
+		</section>
 
-        <div class="what-we-do">
-            <h2 class="we-do">What are we doing?</h2>
-            <ul>
-                <li><img src="./images/ww-do1.png" alt="developing web-cites" width="370"></li>
-                <li><img src="./images/ww-do2.png" alt="create mobile-app" width="370"></li>
-                <li><img src="./images/ww-do3.png" alt="color palette" width="370"></li>
-            </ul>
-        </div>
+		<section class="features">
+			<h2 class="features-title display-none">Features</h2>
+			<ul>
+				<li class="features-item">
+					<h3>attention to details</h3>
+					<p>Ideological considerations, and even the beginning of daily work on forming a position.</p>
+				</li>
+				<li class="features-item">
+					<h3>punctuality</h3>
+					<p>The task of the organization, especially the framework and the place of personnel training, attracts.
+					</p>
+				</li>
+				<li class="features-item">
+					<h3>planning</h3>
+					<p>Likewise, consultation with a broad asset largely determines.
+					</p>
+				</li>
+				<li class="features-item">
+					<h3>modern technology</h3>
+					<p>The importance of these problems is so obvious that the implementation of planned tasks.</p>
+				</li>
+			</ul>
+		</section>
 
-        <section class="our-team">
-            <h2 class="our-team-title">Our team</h2>
-            <ul class="team">
-                <li class="teammate1">
-                    <img src="./images/team-w1.jpg" alt="photo Ihor Demyanenko" width="270">
-                    <h3>Ihor Demyanenko</h3>
-                    <p>Product Designer</p>
-                </li>
-                <li class="teammate2">
-                    <img src="./images/team-w2.jpg" alt="photo Olga Repina" width="270">
-                    <h3>Olga Repina</h3>
-                    <p>Prontend Developer</p>
-                </li>
-                <li class="teammate3">
-                    <img src="./images/team-w3.jpg" alt="photo Mykola Tarasov" width="270">
-                    <h3>Mykola Tarasov</h3>
-                    <p>Marketing</p>
-                </li>
-                <li class="teammate4">
-                    <img src="./images/team-w4.jpg" alt="photo Mykhailo Yermakov" width="270">
-                    <h3>Mykhailo Yermakov</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
-        </section> 
-    </main>
-    <footer>
-        <img src="./images/logo.svg" alt="Web Studio logo" width="145" height="31">
-        <p class="address">Kyiv, 26 Lesi Ukrainky Ave</p>
-        <p class="telehone"><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-        <p class="email"><a href="tel:+38(096)111-11-11">+38(096)111-11-11</a></p>
-    </footer>
+		<section class="ww-do">
+			<h2 class="ww-do-title">What are we doing?</h2>
+			<ul>
+				<li class="ww-do-item"><img src="./images/ww-do2.jpg" alt="Create mobile-app" width="370" height="294"></li>
+				<li class="ww-do-item"><img src="./images/ww-do1.jpg" alt="Developing web-cites" width="370" height="294"></li>
+				<li class="ww-do-item"><img src="./images/ww-do3.jpg" alt="Selection of perfect colors" width="370"
+						height="294"></li>
+			</ul>
+		</section>
+
+		<section class="team">
+			<h2 class="team-title">Our team</h2>
+			<ul>
+				<li class="team-mate">
+					<img src="./images/team-w1.jpg" alt="photo Ihor Demyanenko" width="270" height="260">
+					<h3>Ihor Demyanenko</h3>
+					<p>Product Designer</p>
+				</li>
+				<li class="team-mate">
+					<img src="./images/team-w2.jpg" alt="photo Olga Repina" width="270" height="260">
+					<h3>Olga Repina</h3>
+					<p>Prontend Developer</p>
+				</li>
+				<li class="team-mate">
+					<img src="./images/team-w3.jpg" alt="photo Mykola Tarasov" width="270" height="260">
+					<h3>Mykola Tarasov</h3>
+					<p>Marketing</p>
+				</li>
+				<li class="team-mate">
+					<img src="./images/team-w4.jpg" alt="photo Mykhailo Yermakov" width="270" height="216">
+					<h3>Mykhailo Yermakov</h3>
+					<p>UI Designer</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<a href="./" class="logo"><span class="logo-blue">web</span>studio</a>
+		<address>
+			<a class="address" href="https://goo.gl/maps/h7qad5uZnMYCdgti7" target="_blank" rel="nofollow">Kyiv, 26 Lesi
+				Ukrainky Ave</a>
+			<a class="phone" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+			<a class="email" href="tel:+38(096)111-11-11">+38(096)111-11-11</a></>
+		</address>
+	</footer>
 </body>
+
 </html>
