@@ -1,0 +1,337 @@
+/* COLOR, BG-COLOR, FONT  */
+:root {
+	--main-brand-color: #2196f3;
+	--brand-text-color1: #000000; /* second color logo in header */
+	--brand-text-color2: #ffffff; /* secend color logo in footer */
+
+	--main-text-color: #212121; /* used in nav and logo */
+	--second-text-color: #757575; /* paragraf text color */
+	--transparent-text-color: #ffffff99; /* used in contacts footer*/
+	--hovered-text-color: var(--main-brand-color); /* used in hovered text */
+	--button-text-color: var(--brand-text-color2); /* BUTTON active text color */ 
+	--button-text-color2: var(--main-text-color); /* BUTTON no-active text color */
+
+	--page-bg-color: #ffffff; /* page default bg-color */
+	--second-bg-color: #f5f4fa; /* acsent bg-color */
+	--third-bg-color: #2f303a; /* theme bg-color */
+	--button-bg-color: var(--main-brand-color); /* theme default BUTTON bg-color */
+	--button-bg-color2: var(--second-bg-color); /* no-active BUTTON bg-color */
+	--border-header-color: #ececec;
+	--shadow: 0 4px 4px (0, 0, 0, 0.25);
+
+	/* FONT */
+	--font-logo: 26px/1.2 "Raleway", Arial, sans-serif;
+	--font-h1: 900 44px/1.35 "Roboto", Arial, sans-serif;
+	--font-h2: 700 36px/1.17 "Roboto", Arial, sans-serif;
+}
+
+
+/* start DEFAULT SETTINGS for body, lists list-items, links */
+body {
+	width: 100vw;
+	max-width: 1600px;
+	margin: 0 auto;
+	font: 14px/1.15 "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+	color: var(--main-text-color);
+}
+
+.logo,
+.menu-item,
+.contact-header,
+.contact-footer {
+	text-decoration: none;
+}
+
+.menu-list,
+.contact-h,
+.features-list,
+.ww-do-list,
+.team-list,
+.contact-f,
+.contact-h,
+.filter,
+.projects {
+	padding-left: 0;
+}
+
+.menu-item,
+.contact-h-item,
+.list-item,
+.ww-do-item,
+.team-mate,
+.footer-item,
+.filter-item,
+.project{
+	list-style-type: none;
+}
+/* end DEFAULT SETTINGS for body, lists list-items, links */
+
+.header {
+	display: flex;
+	align-items: center;
+	height: 80px;
+}
+
+.logo {
+	color: var(--brand-text-color1);
+	font: var(--font-logo);
+}
+
+.logo-blue {
+	color: var(--main-brand-color);
+}
+
+.menu {
+	margin-left: 75px;
+	flex-grow: 1;
+}
+
+.contact-h,
+.menu-list {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-item {
+	color: var(--brand-text-color1);
+	font-weight: 500;
+}
+
+.contact-header {
+	color: var(--second-text-color);
+}
+/* ---end HEADER + HERO --- */
+
+.main {
+	border-top: 1px solid var(--border-header-color);
+}
+
+.hero {
+	width: 100%;
+	height: 600px;
+	background-color: var(--third-bg-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-title {
+	color: var(--brand-text-color2);
+	font: var(--font-h1);
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	width: 690px;
+	text-align: center;
+}
+
+.hero-button {
+	padding: 10px 32px;
+	border-radius: 4px;
+	color: var(--button-text-color);
+	background-color: var(--button-bg-color);
+	border-style: none; 
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	box-shadow: 0px 4px 4px #00000026;
+	cursor: pointer;
+}
+
+.ww-do,
+.page-wrap {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.team-list,
+.ww-do-list,
+.features-list {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.footer {
+	background-color: var(--third-bg-color);
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.contact-footer {
+	color: var(--transparent-text-color);
+}
+
+.contacts {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-style: normal;
+	line-height: 24px;
+}
+
+.list-item {
+	max-width: 270px;
+}
+
+.lst-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--main-text-color);
+	margin: 0;
+}
+
+.lst-text {
+	color: var(--second-text-color);
+	line-height: 1.7;
+}
+
+.hidden {
+	color: rgba(0, 0, 0, 0); 
+	position: absolute; 
+	width: 1px; 
+	height: 1px; 
+	margin: -1px; 
+	border: 0; 
+	padding: 0; 
+	white-space: nowrap;
+	clip-path: inset(100%); 
+	clip: rect(0 0 0 0); 
+	overflow: hidden;
+}
+
+.features {
+	padding-top: 95px;
+}
+
+.ww-do,
+.team {
+	text-align: center;
+	padding: 95px;
+}
+
+.team {
+	height: 460px;
+	background-color: var(--second-bg-color);
+	line-height: 1.19;
+	font-size: 16px;
+}
+.team-mate {
+	box-shadow: 
+		0 2px 1px rgba(0, 0, 0, 0.2),
+		0 1px 1px rgba(0, 0, 0, 0.14),
+		0 1px 3px rgba(0, 0, 0, 0.12);
+	border-radius: 0 0 4px 4px;
+}
+
+.mate-name {
+	font-weight: 500;
+}
+
+.mate-job {
+	color: var(--second-text-color);
+}
+
+.ww-do-title,
+.team-title {
+	font: var(--font-h2);
+	color: var(--main-text-color);
+	margin-bottom: 50px;
+}
+
+/* second page --- portfolio.html */
+.portfolio {
+	margin: 95px auto;
+}
+
+.filter {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 50px;
+}
+
+.filter-button{
+	background-color: var(--button-bg-color2);
+	padding: 6px 25px;
+	border: none;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+}
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.project {
+	border: 1px solid #eeeeee
+}
+
+.project-text {
+	color: var(--second-text-color);
+	margin: 0 20px 25px;
+	font-size: 16px;
+	line-height: 1.88;
+}
+
+.project-title {
+	margin: 25px 20px 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+/* ALL activity :hover, :after, :focus on the page */
+.logo:hover {
+	text-shadow: 
+	1px 1px 1px rgba(0, 0, 0, 0.3),
+	1px -1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.hero-button:hover {
+	box-shadow: 
+	1px 1px 1px rgba(0, 0, 0, 0.2),
+	inset -1px -1px 2px rgba(0, 0, 100, 0.5);
+	background-color: #28e;
+}
+
+.contact-header:focus,
+.contact-header:hover,
+.menu-item:focus,
+.menu-item:active,
+.menu-item:hover{
+	color: var(--main-brand-color);
+	cursor: pointer;
+}
+
+.filter-button:focus,
+.filter-button:hover,
+.filter-button:active {
+	background-color: var(--main-brand-color);
+	color: var(--brand-text-color2);
+	cursor: pointer;
+	box-shadow: 
+		0 3px 1px rgba(0, 0, 0, 0.1),
+		0 1px 2px rgba(0, 0, 0, 0.08),
+		0 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.contact-footer:focus,
+.contact-footer:hover,
+.contact-footer.address,
+.footer-logo {
+	color: var(--brand-text-color2);
+}
